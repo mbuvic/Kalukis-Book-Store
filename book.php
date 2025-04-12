@@ -64,7 +64,7 @@
                     ?>
                     <tr>
                       <td><?php echo $key; ?></td>
-                      <td><?php if ($key == "Price") { echo "Ksh. "; } ?><?php echo $value; ?></td>
+                      <td><?php if ($key == "Price") { echo "Ksh. "; } ?><?php echo $key == "Price" ? number_format((int)$value, 2) : $value; ?></td>
                     </tr>
                     <?php 
                       } 

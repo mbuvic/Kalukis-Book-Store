@@ -51,16 +51,16 @@
 						?>
 					<tr>
 						<td><?php echo $book['book_title'] . " by " . $book['book_author']; ?></td>
-						<td><?php echo "$" . $book['book_price']; ?></td>
+						<td><?php echo "Ksh. " . $book['book_price']; ?></td>
 						<td><?php echo $qty; ?></td>
-						<td><?php echo "$" . $qty * $book['book_price']; ?></td>
+						<td><?php echo "Ksh. " . $qty * $book['book_price']; ?></td>
 					</tr>
 					<?php } ?>
 					<tr>
 						<th>&nbsp;</th>
 						<th>&nbsp;</th>
 						<th><?php echo $_SESSION['total_items']; ?></th>
-						<th><?php echo "$" . $_SESSION['total_price']; ?></th>
+						<th><?php echo "Ksh. " . $_SESSION['total_price']; ?></th>
 					</tr>
 					<tr>
 						<td>Shipping</td>
@@ -72,7 +72,7 @@
 						<th>Total Including Shipping</th>
 						<th>&nbsp;</th>
 						<th>&nbsp;</th>
-						<th><?php echo "$" . ($_SESSION['total_price'] + 20); ?></th>
+						<th><?php echo "Ksh. " . ($_SESSION['total_price'] + 20); ?></th>
 					</tr>
 				</table>
 			</div>
@@ -93,6 +93,7 @@
 							<div class="form-group mb-3">
 								<label for="card_type" class="control-label">Type</label>
 								<select class="form-select rounded-0" name="card_type">
+									<option value="MPesa">M-Pesa</option>
 									<option value="VISA">VISA</option>
 									<option value="MasterCard">MasterCard</option>
 									<option value="American Express">American Express</option>
@@ -103,11 +104,11 @@
 								<input type="text" class="form-control rounded-0" name="card_number">
 							</div>
 							<div class="form-group mb-3">
-								<label for="card_PID" class="control-label">PID</label>
+								<label for="card_PID" class="control-label">Transaction Code</label>
 								<input type="text" class="form-control rounded-0" name="card_PID">
 							</div>
 							<div class="form-group mb-3">
-								<label for="card_expire" class="control-label">Expiry Date</label>
+								<label for="card_expire" class="control-label">Date</label>
 								<input type="date" name="card_expire" class="form-control rounded-0">
 							</div>
 							<div class="form-group mb-3">

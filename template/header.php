@@ -29,12 +29,12 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNav" aria-controls="topNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-          <a class="navbar-brand" href="index.php">Simple Online Book Store</a>
+          <a class="navbar-brand" href="index.php">Kaluki's Book Store</a>
         </div>
 
         <!--/.navbar-collapse -->
         <div class="collapse navbar-collapse" id="topNav">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav ms-auto">
             <?php if(isset($_SESSION['admin']) && $_SESSION['admin'] == true): ?>
                 <li class="nav-item"><a class="nav-link" href="admin_book.php"><span class="fa fa-th-list"></span> Book List</a></li>
                 <li class="nav-item"><a class="nav-link" href="admin_add.php"><span class="far fa-plus-square"></span> Add New Book</a></li>
@@ -56,7 +56,7 @@
     ?>
     <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="container">
-        <h1>Welcome to Simple Online Book Store</h1>
+        <h1>Welcome to My Book Store</h1>
         <hr>
       </div>
     <?php } ?>

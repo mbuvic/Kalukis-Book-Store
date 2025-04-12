@@ -44,7 +44,7 @@
                   <h4>Details</h4>
                   <table class="table">
                     <?php foreach($row as $key => $value){
-                      if($key == "book_descr" || $key == "book_image" || $key == "publisherid" || $key == "book_title"){
+                      if($key == "book_descr" || $key == "book_image" || $key == "publisherid" || $key == "book_title" || $key == "created_at"){
                         continue;
                       }
                       switch($key){
@@ -64,7 +64,7 @@
                     ?>
                     <tr>
                       <td><?php echo $key; ?></td>
-                      <td><?php echo $value; ?></td>
+                      <td><?php if ($key == "Price") { echo "Ksh. "; } ?><?php echo $value; ?></td>
                     </tr>
                     <?php 
                       } 

@@ -56,7 +56,7 @@
     ?>
     <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="container">
-        <h1>Welcome to My Book Store</h1>
+        <h1>Welcome to Kaluki's Book Store</h1>
         <hr>
       </div>
     <?php } ?>

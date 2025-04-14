@@ -24,10 +24,17 @@
 	$result = mysqli_query($conn, $query);
 	if($result->num_rows <= 0){
 		$_SESSION['err_login'] = "Incorrect Username or Password";
-		header("Location: admin.php");
+		header("Location: login.php");
 		exit;
 	}
 	if(isset($conn)) {mysqli_close($conn);}
-	$_SESSION['admin'] = true;
-	header("Location: admin_book.php");
+  if ($name =="admin") {
+    $_SESSION['name'] = $name;
+    $_SESSION['admin'] = true;
+    header("Location: admin_book.php");
+  } else {
+    $_SESSION['admin'] = false;
+    $_SESSION['name'] = $name;
+    header("Location: books.php");
+  }
 ?>

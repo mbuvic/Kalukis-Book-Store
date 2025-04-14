@@ -82,7 +82,12 @@
 		<div class="col-lg-5 col-md-8 col-sm-10 col-xs-12">
 			<div class="card rounded-0 shadow">
 				<div class="card-header">
-					<div class="card-title h6 fw-bold">Please Fill the following form</div>
+          <center>
+              <p class="fw-bold fst-italic">MPESA PAYMENTS</p>
+              <p class="fw-bold fst-italic">PAYBILL: 247247</p>
+              <p class="fw-bold fst-italic">ACC NO: 0112930819</p>
+          </center>
+					<div class="card-title h6 fw-light text-center">Please Fill the following form below after payment</div>
 				</div>
 				<div class="card-body">
 					<div class="container-fluid">

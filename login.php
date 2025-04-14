@@ -3,7 +3,7 @@ session_start();
 if(isset($_SESSION['admin']) && $_SESSION['admin'] == true){
 	header('location:admin_book.php');
 }
-	$title = "Admin Panel";
+	$title = "Login Panel";
 	require_once "./template/header.php";
 ?>
 <div class="row justify-content-center my-5">

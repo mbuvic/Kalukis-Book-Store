@@ -38,6 +38,8 @@
             <?php if(isset($_SESSION['admin']) && $_SESSION['admin'] == true): ?>
                 <li class="nav-item"><a class="nav-link" href="admin_book.php"><span class="fa fa-th-list"></span> Book List</a></li>
                 <li class="nav-item"><a class="nav-link" href="admin_add.php"><span class="far fa-plus-square"></span> Add New Book</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-user"></span> <?= $_SESSION['name']; ?></a></li>
+
                 <li class="nav-item"><a class="nav-link" href="admin_signout.php"><span class="fa fa-sign-out-alt"></span> Logout</a></li>
             <?php else: ?>
               <!-- link to publiser_list.php -->
@@ -46,6 +48,10 @@
               <li class="nav-item"><a class="nav-link" href="books.php"><span class="fa fa-book"></span> Books</a></li>
               <!-- link to shopping cart -->
               <li class="nav-item"><a class="nav-link" href="cart.php"><span class="fa fa-shopping-cart"></span> My Cart</a></li>
+              <?php if (isset($_SESSION['name']) && $_SESSION['name'] != ""): ?>
+                <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-user"></span> <?= $_SESSION['name']; ?></a></li>
+                <li class="nav-item"><a class="nav-link" href="admin_signout.php"><span class="fa fa-sign-out-alt"></span> Logout</a></li>
+              <?php endif; ?>
             <?php endif; ?>
             </ul>
         </div>

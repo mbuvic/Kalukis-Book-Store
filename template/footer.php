@@ -7,7 +7,7 @@
 						<a href="#" target="_blank" class="text-decoration-none text-muted fw-bold">Kaluki's Book Stores &copy; <?= date('Y') ?> </a>
 					</div>
 					<div class="">
-						<a href="admin.php" class="text-decoration-none text-dark fw-bolder">Login as Admin</a>
+						<a href="login.php" class="text-decoration-none text-dark fw-bolder">Login</a>
 					</div>
 				</div>
 			</div>
